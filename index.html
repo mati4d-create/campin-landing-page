@@ -4,7 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CAMP'IN - Descubre Campings Únicos en Sudamérica</title>
-    <meta name="description" content="Encuentra y reserva campings privados desde la Patagonia hasta el Amazonas.">
+    <meta name="description" content="Encuentra y reserva campings privados desde Atacama hasta la Patagonia.">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="CAMP'IN - Descubre Campings Únicos en Sudamérica">
+    <meta property="og:description" content="Encuentra y reserva campings privados desde Atacama hasta la Patagonia.">
+    <meta property="og:image" content="Campin_logo06.png">
+    <meta property="og:url" content="https://campin.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CAMP'IN - Descubre Campings Únicos en Sudamérica">
+    <meta name="twitter:description" content="Encuentra y reserva campings privados desde Atacama hasta la Patagonia.">
+    <meta name="twitter:image" content="Campin_logo06.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="Campin_logo06.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
@@ -54,10 +70,14 @@
         }
 
         .nav-logo {
-            font-size: 24px;
-            font-weight: 700;
-            color: var(--color-orange);
+            display: flex;
+            align-items: center;
             text-decoration: none;
+        }
+
+        .nav-logo img {
+            height: 50px;
+            width: auto;
         }
 
         .nav-cta {
@@ -341,8 +361,8 @@
                 font-size: 1.5rem;
             }
 
-            .nav-logo {
-                font-size: 20px;
+            .nav-logo img {
+                height: 40px;
             }
 
             .nav-cta {
@@ -360,8 +380,10 @@
     <!-- Navigation -->
     <nav>
         <div class="container">
-            <a href="#" class="nav-logo">CAMP'IN</a>
-            <a href="#waitlist" class="nav-cta">Únete Ahora</a>
+            <a href="#" class="nav-logo">
+                <img src="Campin_logo06.png" alt="CAMP'IN Logo">
+            </a>
+            <a href="https://forms.gle/YX62Hf9B6XLyR4Wf8" target="_blank" class="nav-cta">Responder Encuesta</a>
         </div>
     </nav>
 
@@ -369,8 +391,8 @@
     <section class="hero">
         <div class="hero-content">
             <h1>Descubre Campings Únicos en Sudamérica</h1>
-            <p>Desde la Patagonia hasta el Amazonas. Encuentra y reserva campings privados verificados en minutos.</p>
-            <a href="#waitlist" class="hero-cta">Únete a la Lista de Espera</a>
+            <p>Desde Atacama hasta la Patagonia. Encuentra y reserva campings privados verificados en minutos.</p>
+            <a href="https://forms.gle/YX62Hf9B6XLyR4Wf8" target="_blank" class="hero-cta">Responder Encuesta</a>
         </div>
     </section>
 
@@ -408,16 +430,15 @@
         </div>
     </section>
 
-    <!-- Waitlist Section -->
+    <!-- Survey Section -->
     <section id="waitlist" class="waitlist">
         <div class="container">
-            <h2 class="section-title">Estamos en Desarrollo</h2>
-            <p>Únete a nuestra lista de espera y sé de los primeros en acceder cuando lancemos. Te avisaremos con noticias y ofertas exclusivas.</p>
+            <h2 class="section-title">¡Tu Opinión es Importante!</h2>
+            <p>Ayúdanos a crear la plataforma perfecta para campers. Responde nuestra encuesta y cuéntanos qué necesitas para tu próxima aventura.</p>
 
-            <form class="waitlist-form" action="https://formspree.io/f/mvgokpvj" method="POST">
-                <input type="email" name="email" class="waitlist-input" placeholder="tu@email.com" required>
-                <button type="submit" class="waitlist-btn">Unirme Gratis</button>
-            </form>
+            <div class="waitlist-form">
+                <a href="https://forms.gle/YX62Hf9B6XLyR4Wf8" target="_blank" class="waitlist-btn" style="display: inline-block; text-decoration: none;">Responder Encuesta</a>
+            </div>
         </div>
     </section>
 
